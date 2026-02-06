@@ -1,0 +1,79 @@
+{
+  "name": "gw2-commkit",
+  "productName": "GW2 CommKit",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Guild Wars 2 Command Kit - Event timers, character tracking, and more",
+  "author": "GW2 CommKit",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development electron .\"",
+    "electron:build": "vite build && npx electron-builder --win",
+    "electron:build:dir": "vite build && electron-builder --win --dir",
+    "postinstall": "npx electron-builder install-app-deps"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^40.0.0",
+    "electron-builder": "^26.7.0",
+    "pe-library": "^2.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.34.5",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.gw2commkit.app",
+    "productName": "GW2 CommKit",
+    "copyright": "Copyright © 2024 GW2 CommKit",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "npmRebuild": false,
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "logo.png",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "logo.png",
+        "to": "logo.png"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "GW2 CommKit",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico"
+    }
+  }
+}
