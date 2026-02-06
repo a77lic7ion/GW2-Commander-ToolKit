@@ -1,7 +1,6 @@
 <div align="center">
-
-  <img width="512" height="512" alt="logo2" src="https://github.com/user-attachments/assets/bfc79636-e06d-4399-8fb6-8de4fff1ecd0" />
-
+  <img src="logo.png" alt="GW2 CommKit Logo" width="450">
+  
 # GW2 CommKit
 
 ### High-Fidelity Tactical Intelligence & Operational Command Suite
@@ -103,45 +102,6 @@ npm run electron:build
 *Executables will be generated in the `dist/` directory.*
 
 ---
-
-Screenshots
-
-Live Event table sort by map
-<img width="1378" height="898" alt="image" src="https://github.com/user-attachments/assets/0da228fe-aecd-4537-b394-806a1c0b7d61" />
-
-Favorites Only Event Tracker, 10 min Notifications brfore.
-<img width="1379" height="912" alt="image" src="https://github.com/user-attachments/assets/88ba2a30-9864-44bf-b92c-a68ac5193a07" />
-
-
-<img width="1380" height="960" alt="image" src="https://github.com/user-attachments/assets/912101fc-2593-4f5d-bf3d-af430774b0da" />
-
-<img width="1390" height="881" alt="image" src="https://github.com/user-attachments/assets/18a11e30-3c5b-499f-8ff3-262eea041f61" />
-
-<img width="1433" height="906" alt="image" src="https://github.com/user-attachments/assets/9772391d-e780-4ea9-b6f5-d61a613f4b0d" />
-
-<img width="1344" height="973" alt="image" src="https://github.com/user-attachments/assets/8cb8d789-4933-4206-9da8-df46b96bcf65" />
-
-Search across Everything
-<img width="1412" height="841" alt="image" src="https://github.com/user-attachments/assets/0e826304-099b-4bf5-8057-13ed1984fd52" />
-
-Instant what you can craft over all Toons and skills, Instant list all gold you can make from crafting over all.
-<img width="1368" height="867" alt="image" src="https://github.com/user-attachments/assets/83a4aed0-adaa-4734-8f6c-287c1f1df4e8" />
-
-Sort and clean across Bank, Toon inv, storage. Clean up advisor.
-<img width="1426" height="896" alt="image" src="https://github.com/user-attachments/assets/be39e0b9-33e3-4f6b-ae27-e85dadc2aa3d" />
-
-Achievement Tracker and bookmarking. (WIP)
-<img width="1454" height="670" alt="image" src="https://github.com/user-attachments/assets/a1371b61-b7de-4a00-93cc-85bd6928a3cf" />
-
-Live session tracker and export to CSV.
-<img width="1201" height="746" alt="image" src="https://github.com/user-attachments/assets/56db89da-1fee-495d-807f-5ee0738717ce" />
-
-Conversion Calculator (WIP)
-<img width="1305" height="886" alt="image" src="https://github.com/user-attachments/assets/e78a5b4c-75b1-41bb-8c9f-653c0fdc58b9" />
-
-New Legendary Tracker
-<img width="1395" height="850" alt="image" src="https://github.com/user-attachments/assets/34e30d53-4ad3-4459-b60b-00c90c0c340d" />
-
 
 ## 🏗️ Technology Stack
 
